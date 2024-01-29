@@ -21,6 +21,8 @@ ENGINES = [
 ]
 
 
+
+
 class Chatbot:
     """
     Official ChatGPT API
@@ -47,7 +49,7 @@ class Chatbot:
         """
         self.engine: str = engine or "gpt-3.5-turbo"
         self.api_key: str = api_key
-        self.api_url: str = api_url or "https://api.openai.com/v1/chat/completions"
+        self.api_url: str = api_url or "/api/completions/v1"
         self.system_prompt: str = (
             system_prompt
             or "You are ChatGPT, \
